@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-15T09:28:12.783Z",
+    "end": "2023-07-15T09:28:13.290Z",
+    "duration": 507,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3f1212b2-b574-41c8-b85c-e16b57c0ff44",
+      "title": "",
+      "fullFile": "cypress/integration/pages/2-addCart.cy.ts",
+      "file": "cypress/integration/pages/2-addCart.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "49e7dc94-f7d2-4e55-8f44-77c6966bb464",
+          "title": "Test Suite Sauce Demo - Add Product to Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_003 - Positive Test - Add products to cart",
+              "fullTitle": "Test Suite Sauce Demo - Add Product to Cart TC_003 - Positive Test - Add products to cart",
+              "timedOut": null,
+              "duration": 348,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\ndashboardPage.add_SauceLabsBackpack_toCart();\ndashboardPage.add_SauceLabsBikeLight_toCart();\ndashboardPage.add_SauceLabsBoltTShirt_toCart();\ndashboardPage.assert_addedToCart();\ndashboardPage.openCart();\ndashboardPage.assert_openCart();",
+              "err": {
+                "message": "TypeError: dashboardPage.add_SauceLabsBackpack_toCart is not a function",
+                "estack": "TypeError: dashboardPage.add_SauceLabsBackpack_toCart is not a function\n    at Context.eval (http://localhost:52995/__cypress/tests?p=cypress\\integration\\pages\\2-addCart.cy.ts:107:23)",
+                "diff": null
+              },
+              "uuid": "bbd21d54-1aad-4f57-9bed-070140892f85",
+              "parentUUID": "49e7dc94-f7d2-4e55-8f44-77c6966bb464",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bbd21d54-1aad-4f57-9bed-070140892f85"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 348,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
