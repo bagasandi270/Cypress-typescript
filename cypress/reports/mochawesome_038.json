@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-07-15T09:42:20.162Z",
+    "end": "2023-07-15T09:42:21.120Z",
+    "duration": 958,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5333fbea-3995-4038-ac69-f034c2e69c33",
+      "title": "",
+      "fullFile": "cypress/integration/pages/3-checkout.cy.ts",
+      "file": "cypress/integration/pages/3-checkout.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab7ee01a-da59-4fc7-9f08-dc558f06e139",
+          "title": "Test Suite Sauce Demo - Checkout",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_004 - Positive Test - Checkout",
+              "fullTitle": "Test Suite Sauce Demo - Checkout TC_004 - Positive Test - Checkout",
+              "timedOut": null,
+              "duration": 381,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.openCart();\ndashboardPage.assert_openCart();\ndashboardPage.clickCheckout();\ndashboardPage.formCheckout('Dwiky', 'Kurniawan', '55142');\ndashboardPage.clickContinue();\ndashboardPage.assert_Checkout_Overview();\ndashboardPage.clickFinish();\ndashboardPage.assert_finishCheckout();",
+              "err": {
+                "message": "TypeError: dashboardPage.openCart is not a function",
+                "estack": "TypeError: dashboardPage.openCart is not a function\n    at Context.eval (http://localhost:55114/__cypress/tests?p=cypress\\integration\\pages\\3-checkout.cy.ts:108:23)",
+                "diff": null
+              },
+              "uuid": "b018575f-9b99-4078-9dc8-02f43a0013d5",
+              "parentUUID": "ab7ee01a-da59-4fc7-9f08-dc558f06e139",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_005 - Negative Test - Checkout",
+              "fullTitle": "Test Suite Sauce Demo - Checkout TC_005 - Negative Test - Checkout",
+              "timedOut": null,
+              "duration": 301,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.assert_addedToCart();\ndashboardPage.openCart();\ndashboardPage.assert_openCart();\ndashboardPage.clickCheckout();\ndashboardPage.formCheckout('{backspace}', 'Kurniawan', '55142');\ndashboardPage.clickContinue();\ndashboardPage.assert_formCheckout_Fail();",
+              "err": {
+                "message": "TypeError: dashboardPage.assert_addedToCart is not a function",
+                "estack": "TypeError: dashboardPage.assert_addedToCart is not a function\n    at Context.eval (http://localhost:55114/__cypress/tests?p=cypress\\integration\\pages\\3-checkout.cy.ts:120:23)",
+                "diff": null
+              },
+              "uuid": "dbd9c9e4-b88d-49e0-8fa5-859a218375c6",
+              "parentUUID": "ab7ee01a-da59-4fc7-9f08-dc558f06e139",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b018575f-9b99-4078-9dc8-02f43a0013d5",
+            "dbd9c9e4-b88d-49e0-8fa5-859a218375c6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 682,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

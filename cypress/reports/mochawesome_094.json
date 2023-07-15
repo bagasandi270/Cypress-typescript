@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-15T10:02:50.934Z",
+    "end": "2023-07-15T10:02:56.550Z",
+    "duration": 5616,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3f4b5c8-59bb-4b5b-98fe-d47ed4dc9259",
+      "title": "",
+      "fullFile": "cypress/integration/pages/3-checkout.cy.ts",
+      "file": "cypress/integration/pages/3-checkout.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8045d466-b325-481f-85f3-c0604b2b819f",
+          "title": "Test Suite Sauce Demo - Checkout",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_004 - Positive Test - Checkout",
+              "fullTitle": "Test Suite Sauce Demo - Checkout TC_004 - Positive Test - Checkout",
+              "timedOut": null,
+              "duration": 2518,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();",
+              "err": {},
+              "uuid": "53787ce2-2b46-4558-9254-3d7dbc757a91",
+              "parentUUID": "8045d466-b325-481f-85f3-c0604b2b819f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_005 - Negative Test - Checkout",
+              "fullTitle": "Test Suite Sauce Demo - Checkout TC_005 - Negative Test - Checkout",
+              "timedOut": null,
+              "duration": 1163,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');",
+              "err": {},
+              "uuid": "2415e520-04e2-443f-9d80-79cfd515d769",
+              "parentUUID": "8045d466-b325-481f-85f3-c0604b2b819f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "53787ce2-2b46-4558-9254-3d7dbc757a91",
+            "2415e520-04e2-443f-9d80-79cfd515d769"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3681,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
